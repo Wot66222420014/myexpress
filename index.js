@@ -72,7 +72,7 @@ app.use((err, req, res, next) => {
 });
 
 // listen on port
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3009;
 app.listen(port, () => {
   console.log(`listening on ${port}`);
   if (!config.channelAccessToken || !config.channelSecret || config.channelAccessToken === 'ใส่ของคุณ') {
