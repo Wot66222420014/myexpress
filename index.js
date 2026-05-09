@@ -11,7 +11,7 @@ const config = {
   channelSecret: process.env.CHANNEL_SECRET || ""
 };
 
-app.use('/callbac', line.middleware(config));
+app.use('/callback', line.middleware(config));
 
 // รับ webhook
 app.post('/callback', (req, res) => {
